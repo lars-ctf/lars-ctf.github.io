@@ -69,12 +69,12 @@ a:link, a:visited {
     color: #fff;
 }
 
-/* @media (prefers-reduced-motion: reduce) { */
-/*     .blink { */
-/*         animation: none; */
-/*     } */
+@media (prefers-reduced-motion: reduce) {
+    .blink {
+        animation: none;
+    }
 
-/*     .bg { */
-/*         display: none; */
-/*     } */
-/* } */
+    .bg {
+        display: none;
+    }
+}
