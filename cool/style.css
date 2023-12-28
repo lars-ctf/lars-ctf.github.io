@@ -1,12 +1,15 @@
 html, body {
     background-color: #000;
     color: #fff;
-    padding: 0;
-    margin: 0;
     text-align: center;
     font-size: 69px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+}
+
+* {
+    padding: 0;
+    margin: 0;
 }
 
 .center {
@@ -66,12 +69,12 @@ a:link, a:visited {
     color: #fff;
 }
 
-@media (prefers-reduced-motion: reduce) {
-    .blink {
-        animation: none;
-    }
+/* @media (prefers-reduced-motion: reduce) { */
+/*     .blink { */
+/*         animation: none; */
+/*     } */
 
-    .bg {
-        display: none;
-    }
-}
+/*     .bg { */
+/*         display: none; */
+/*     } */
+/* } */
