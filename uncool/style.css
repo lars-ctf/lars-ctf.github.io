@@ -1,0 +1,77 @@
+html, body {
+    background-color: #000;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 69px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.blink {
+    animation: blink .2s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.bg {
+    z-index: 1;
+    width: 100%;
+    height: 200vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page {
+    height: 100vh;
+    position: relative;
+}
+
+.note {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 28px;
+}
+
+.colored {
+    background-color: pink;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+a:link, a:visited {
+    color: #fff;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .blink {
+        animation: none;
+    }
+
+    .bg {
+        display: none;
+    }
+}
