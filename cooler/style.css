@@ -9,6 +9,7 @@ html, body {
     font-size: 69px;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
+    overflow-x: hidden;
 }
 
 section{
@@ -150,4 +151,29 @@ div {
     transform: translate(-50%, -40%);
     width: 100%;
     height: 100vh;
+}
+
+ul li {
+    animation: shake 0.1s ease infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+
+    }
+}
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
 }
